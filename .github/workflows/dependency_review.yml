@@ -11,8 +11,8 @@ on:
 jobs:
   call-sbom-upload:
     if: github.event_name == 'push'
-    uses: appsecdemos/reusable-workflows/.github/workflows/sbom_upload.yml@main
+    uses: appsecdemos/reusable-workflows/.github/workflows/sbom_upload.yml@v1
 
   call-dependency-review:
     if: github.event_name == 'pull_request'
-    uses: appsecdemos/reusable-workflows/.github/workflows/dependency_review.yml@main
+    uses: appsecdemos/reusable-workflows/.github/workflows/dependency_review.yml@v1
