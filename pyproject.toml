@@ -8,8 +8,8 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.9"
-requests = "2.19.1"  # Vulnerable top-level dependency
-flask = "2.0.0"  # Top-level dependency with a vulnerable transitive dependency
+requests = "2.32.4"  # Vulnerable top-level dependency
+flask = "2.2.5"  # Top-level dependency with a vulnerable transitive dependency
 
 [build-system]
 requires = ["poetry-core"]
