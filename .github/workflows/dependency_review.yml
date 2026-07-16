@@ -15,4 +15,4 @@ jobs:
 
   call-dependency-review:
     if: github.event_name == 'pull_request'
-    uses: appsecdemos/reusable-workflows/.github/workflows/dependency_review.yml@v1
+    uses: appsecdemos/reusable-workflows/.github/workflows/pr_dependency_review.yml@v1
