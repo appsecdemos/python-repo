@@ -12,6 +12,8 @@ on:
 jobs:
   call-sbom-upload:
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    permissions:
+      contents: write
     uses: appsecdemos/reusable-workflows/.github/workflows/sbom_upload.yml@v1
 
   call-dependency-review:
